@@ -3,6 +3,6 @@ Analytical Visualization Project
 CCT111
 
 Group members:
-Ali  XXXXXXXXXX
-Ryan 1004438156
-Sam  XXXXXXXXXX
+Ali  XXXXXXXXXX OOOOOOOO
+Ryan 1004438156 wongry22
+Sam  XXXXXXXXXX OOOOOOOO
