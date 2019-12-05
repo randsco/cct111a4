@@ -1,0 +1,14 @@
+User: Ali  (Put user stories you are working on below.)
+
+
+User: Ryan (Put user stories you are working on below.)
+Start: December 5 2:42pm
+End:
+BranchName: UserStory1
+Description:
+The program will copy selected lines from “measles.csv” into a file selected by
+the user.
+
+User: Sam  (Put user stories you are working on below.)
+
+
