@@ -1,5 +1,7 @@
 User: Ali  (Put user stories you are working on below.)
 
+Start: December 5 3:27pm
+End: 
 BranchName: ReflectionEssay
 Description:
 1. Discuss what you learned and compare and contrast the kinds of questions can
@@ -19,8 +21,9 @@ References list should be provided).
 
 
 User: Ryan (Put user stories you are working on below.)
+
 Start: December 5 2:42pm
-End:
+End: 
 BranchName: UserStory1
 Description:
 The program will copy selected lines from “measles.csv” into a file selected by
