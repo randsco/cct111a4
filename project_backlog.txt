@@ -1,0 +1,81 @@
+Project Backlog AKA "Things to do".
+
+What is a Project Backlog?
+The project backlog is a list of tasks to be claimed and completed. Copy, delete
+and paste a user story from here into sprint_backlog.txt to claim it.
+Then create a new branch for yourself to work on that task with the command
+"git branch BranchName"
+and switch to that branch with
+"git checkout BranchName"
+The branch names are listed below beside "BranchName:".
+
+What is a User Story?
+A user story is a feature of a program. It details what the program should do in
+response to a potential user's actions. Our job is to create a program that will
+respond exactly how the user story describes it.
+
+V------List of User Stories to be Completed------V
+
+BranchName: UserStory2
+Description:
+The program will always read from “measles.csv” (it will not prompt the user for
+the name of the input file). If it is unable to open that file, the program will
+halt with an error message.
+
+BranchName: UserStory3
+Description:
+The program will prompt the user for the name of the output file. If that file
+does not exist, the program will create it and continue. If that file does
+exist, the program will discard the current contents of the file and continue
+(it will overwrite it).
+
+BranchName: UserStory4
+Description:
+The program will prompt the user to enter a year, and will then prompt the user
+to enter an income level. The income level must be one of the characters in the
+set {1, 2, 3, 4}, where 1 corresponds to “low income”, 2 corresponds to “lower
+middle income”, 3 corresponds to “upper middle income” and 4 corresponds to
+“high income”.
+
+BranchName: UserStory5
+Description:
+The program will copy all data of “measles.csv” selected by the user’s response.
+A column is selected if the user’s response matches the Year field. A row
+(country) is selected if the income level matches. All data (in either/both rows
+and columns) are selected if the user’s response is “all” or “ALL”.
+For example, a line whose Year field contains “1987” would be selected by any of
+the following user responses: “1987”, “all”, “”ALL”.
+The output file created by the program will have the same format as the input file. Note that when the user selects all lines, the output file will be identical to the input file.
+
+BranchName: UserStory6
+Description:
+The program will identify all records in the input file which match the user’s
+criteria for year and income level, and the program will display a report with
+the following information to the console:
+- The count of records in the input file that match the user’s criteria.
+- The average percentage for those records (displayed with one fractional digit)- The country with the lowest percentage for those records.
+- The country with the highest percentage for those records.
+- The name of the country and the percent of children vaccinated will be
+  displayed for the last two items (lowest percentage and highest percentage).
+
+BranchName: UserStory7
+Description:
+The program will display appropriate messages to inform the user about any
+errors.
+
+BranchName: ReflectionEssay
+Description:
+1. Discuss what you learned and compare and contrast the kinds of questions can
+   be asked and answered by the data queries vs. the visualization. Examples: wh   at limitations are introduced by the data elements (e.g. World Bank income
+   levels)? what granularity of data is provided by the visualization?
+
+2. Explore an ethical issue introduced by the data and explained by the data.
+   Examples: you could choose a specific country and research why measles
+   vaccine rates developed as they did (e.g. effects of colonization, funding,
+   political opposition, etc.); you could investigate the role of the World Bank
+   and World Health Organization and how they make these measurements and what
+   purposes they serve.
+
+Each part should take between 750-1000 words. Standard academic formatting and
+citations should be used (e.g. in-text citations using APA format; a final
+References list should be provided).
