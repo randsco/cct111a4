@@ -1,5 +1,22 @@
 User: Ali  (Put user stories you are working on below.)
 
+BranchName: ReflectionEssay
+Description:
+1. Discuss what you learned and compare and contrast the kinds of questions can
+   be asked and answered by the data queries vs. the visualization. Examples: wh   at limitations are introduced by the data elements (e.g. World Bank income
+   levels)? what granularity of data is provided by the visualization?
+
+2. Explore an ethical issue introduced by the data and explained by the data.
+   Examples: you could choose a specific country and research why measles
+   vaccine rates developed as they did (e.g. effects of colonization, funding,
+   political opposition, etc.); you could investigate the role of the World Bank
+   and World Health Organization and how they make these measurements and what
+   purposes they serve.
+
+Each part should take between 750-1000 words. Standard academic formatting and
+citations should be used (e.g. in-text citations using APA format; a final
+References list should be provided).
+
 
 User: Ryan (Put user stories you are working on below.)
 Start: December 5 2:42pm
