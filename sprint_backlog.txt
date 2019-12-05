@@ -1,5 +1,22 @@
 User: Ali  (Put user stories you are working on below.)
 
+Start:
+End:
+BranchName: UserStory2
+Description:
+The program will always read from “measles.csv” (it will not prompt the user for
+the name of the input file). If it is unable to open that file, the program will
+halt with an error message.
+
+Start:
+End:
+BranchName: UserStory3
+Description:
+The program will prompt the user for the name of the output file. If that file
+does not exist, the program will create it and continue. If that file does
+exist, the program will discard the current contents of the file and continue
+(it will overwrite it).
+
 Start: December 5 3:27pm
 End: 
 BranchName: ReflectionEssay
