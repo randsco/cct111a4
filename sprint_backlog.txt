@@ -40,11 +40,21 @@ References list should be provided).
 User: Ryan (Put user stories you are working on below.)
 
 Start: December 5 2:42pm
-End: 
+End: December 6 3:00pm 
 BranchName: UserStory1
 Description:
 The program will copy selected lines from “measles.csv” into a file selected by
 the user.
+
+Start: December 6 3:00pm
+End:
+BranchName: UserStory4
+Description:
+The program will prompt the user to enter a year, and will then prompt the user
+to enter an income level. The income level must be one of the characters in the
+set {1, 2, 3, 4}, where 1 corresponds to “low income”, 2 corresponds to “lower
+middle income”, 3 corresponds to “upper middle income” and 4 corresponds to
+“high income”.
 
 User: Sam  (Put user stories you are working on below.)
 

@@ -16,14 +16,6 @@ respond exactly how the user story describes it.
 
 V------List of User Stories to be Completed------V
 
-BranchName: UserStory4
-Description:
-The program will prompt the user to enter a year, and will then prompt the user
-to enter an income level. The income level must be one of the characters in the
-set {1, 2, 3, 4}, where 1 corresponds to “low income”, 2 corresponds to “lower
-middle income”, 3 corresponds to “upper middle income” and 4 corresponds to
-“high income”.
-
 BranchName: UserStory5
 Description:
 The program will copy all data of “measles.csv” selected by the user’s response.
