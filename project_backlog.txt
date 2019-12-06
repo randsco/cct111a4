@@ -34,3 +34,8 @@ Description:
 The program will display appropriate messages to inform the user about any
 errors.
 
+BranchName: UserStory8
+Description:
+Use a toolkit to graph the data. Save and include a good quality view of the image; include
+it in the essay in part 3.
+
