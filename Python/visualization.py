@@ -1,6 +1,7 @@
 import csv
 
 readfile = 'measles.csv'
+writefile = ''
 
 def get_writefile():
     '''
@@ -73,30 +74,30 @@ def copy_selected(readfile, writefile):
     
     return None
 
-def display_reccords(file_name, income):
+def display_reccords(file_name):
     with open(file_name, 'r') as values_file:
         csv_reader = csv.reader(values_file)
-
-        next(csv_reader)
+        
+        year_count = len(next(csv_reader)[2:])-1
 
         record_count=0
         percentage_variable=0
         average_percentage=0
 
-        if income!='ALL':
+        #if income!='ALL':
+            #for line in csv_reader:
+                #record_count += 1
+                #percentage_variable+=int(line[2])
+                #average_percentage= percentage_variable/record_count
+
+        #else:
+        for num in range(year_count+1):
+            values_file.seek(0)
             for line in csv_reader:
                 record_count += 1
-                percentage_variable+=int(line[2])
-                average_percentage= percentage_variable/record_count
-
-        else:
-            for num in range(37):
-            
-                for line in csv_reader:
-                    print(num)
-                    record_count +=1
-                    percentage_variable+=int(line[num+2])
-                    average_percentage= percentage_variable/record_count
+                if len(line[num+2]) > 0:
+                    percentage_variable += int(line[num+2])
+        average_percentage = percentage_variable/record_count
                 
 
         print(record_count)
@@ -113,5 +114,6 @@ def display_reccords(file_name, income):
 # MAIN PROGRAM #################################################################
 ################################################################################
 
-copy_selected('measles.csv', get_writefile())
-display_reccords(readfile,'ALL')
+writefile = get_writefile()
+#copy_selected('measles.csv', writefile)
+display_reccords(writefile)
