@@ -104,13 +104,6 @@ def display_reccords(file_name):
         next(csv_reader)
         highest_rate=next(csv_reader)[2]
 
-        #if income!='ALL':
-            #for line in csv_reader:
-                #record_count += 1
-                #percentage_variable+=int(line[2])
-                #average_percentage= percentage_variable/record_count
-
-        #else:
         for num in range(year_count+1):
             values_file.seek(0)
             next(csv_reader)
@@ -134,16 +127,10 @@ def display_reccords(file_name):
         print(f'The country with the lowest inoculation rate in the queried data is {lowest_country} at {lowest_rate}.')
         print(f'The country with the highest inoculation rate in the queried data is {highest_country} at {highest_rate}.')
 
-       # for line in csv_reader:
-        #    print(line[])
-
-
-#the_income= get_income()
-
 ################################################################################
 # MAIN PROGRAM #################################################################
 ################################################################################
 
 writefile = get_writefile()
-#copy_selected('measles.csv', writefile)
+copy_selected('measles.csv', writefile)
 display_reccords(writefile)
