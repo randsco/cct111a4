@@ -32,3 +32,43 @@ def copy_selected(readfile, writefile):
         year = get_year() # Selects column of information
         income = get_income() # Selects rows of information
 
+
+
+def display_reccords(file_name, income):
+    with open(file_name, 'r') as values_file:
+        csv_reader = csv.reader(values_file)
+
+        next(csv_reader)
+
+        record_count=0
+        percentage_variable=0
+        average_percentage=0
+
+        if income!='ALL':
+            for line in csv_reader:
+                record_count += 1
+                percentage_variable+=int(line[2])
+                average_percentage= percentage_variable/record_count
+
+        else:
+            for num in range(37):
+            
+                for line in csv_reader:
+                    print(num)
+                    record_count +=1
+                    percentage_variable+=int(line[num+2])
+                    average_percentage= percentage_variable/record_count
+                
+
+        print(record_count)
+        print(percentage_variable)
+        print(average_percentage)
+
+       # for line in csv_reader:
+        #    print(line[])
+
+
+#the_income= get_income()
+
+display_reccords(readfile,'ALL')
+
