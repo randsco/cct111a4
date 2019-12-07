@@ -1,10 +1,12 @@
 import csv
 
-readfile = 'measles.csv'
-writefile = ''
+readfile = 'measles.csv' # Initialize readfile constant.
+writefile = '' # Initialize writefile variable.
 
 def get_writefile():
     '''
+    UserStory1 Main Function
+    
     Gets the name of the new file from the user.
     '''
     writefile = str(input('Input name of new file: '))
@@ -15,6 +17,8 @@ def get_writefile():
 
 def get_years():
     '''
+    UserStory2 Helper Function, UserStory7 Main Function
+    
     Gets the integer year 1980-2017 or "ALL" to display from the user.
     '''
     year = input('Enter a year 1980-2017 inclusive: ')
@@ -27,6 +31,8 @@ def get_years():
 
 def get_income():
     '''
+    UserStory5 Helper Function, UserStory7 Main Function
+    
     Gets the income levels to display from the user, an integer 1-4 or "ALL".
     '''
     levels = {1: 'WB_LI', 2: 'WB_LMI', 3: 'WB_UMI', 4: 'WB_HI'}
@@ -37,6 +43,8 @@ def get_income():
 
 def write_rows(csv_reader, csv_writer, year_input, income_input):
     '''
+    UserStory5 Helper Function
+    
     Writes selected rows from measles.csv to new file.
     '''
     csv_writer.writeheader()
@@ -54,6 +62,8 @@ def write_rows(csv_reader, csv_writer, year_input, income_input):
 
 def copy_selected(readfile, writefile):
     '''
+    UserStory5 Main Function
+    
     Copies years and income levels selected by user to a new file.
     '''
     with open(readfile, mode='r') as csv_file: # Open measles.csv for reading.
@@ -66,15 +76,24 @@ def copy_selected(readfile, writefile):
                                                     # does not exist.
             fieldnames = ['Country', 'World_Bank_Income_Level'] + year_input
             csv_writer = csv.DictWriter(new_csv_file, fieldnames=fieldnames)
-            
             write_rows(csv_reader, csv_writer, year_input, income_input)
-
         new_csv_file.close()
     csv_file.close()
     
     return None
 
 def display_reccords(file_name):
+    '''
+    UserStory6 Main Function
+    
+    Displays information about data queried by user.
+    - The count of records in the input file that match the user’s criteria
+    - The average percentage for those records (displayed with one fractional digit)
+    - The country with the lowest percentage for those records
+    - The country with the highest percentage for those records
+    - The name of the country and the percent of children vaccinated will be
+      displayed for the last two items (lowest percentage and highest percentage).
+    '''
     with open(file_name, 'r') as values_file:
         csv_reader = csv.reader(values_file)
         
@@ -95,14 +114,16 @@ def display_reccords(file_name):
             values_file.seek(0)
             for line in csv_reader:
                 record_count += 1
-                if len(line[num+2]) > 0:
+                country_name = line[0]
+                if len(line[num+2]) > 0 and type(line[num+2]) is int:
                     percentage_variable += int(line[num+2])
         average_percentage = percentage_variable/record_count
-                
+        values_file.close()
 
-        print(record_count)
-        print(percentage_variable)
-        print(average_percentage)
+        print('Total records queried:', record_count)
+        print('Average inoculation rate from queried data:', average_percentage)
+        print(f'The country with the lowest inoculation rate in the queried data is {lowest_country} at {lowest_rate}.')
+        print(f'The country with the highest inoculation rate in the queried data is {highest_country} at {highest_rate}.')
 
        # for line in csv_reader:
         #    print(line[])
