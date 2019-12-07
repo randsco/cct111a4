@@ -1,15 +1,15 @@
 User: Ali  (Put user stories you are working on below.)
 
-Start:
-End:
+Start: December 5 12:00pm
+End: December 5 6:00pm
 BranchName: UserStory2
 Description:
 The program will always read from “measles.csv” (it will not prompt the user for
 the name of the input file). If it is unable to open that file, the program will
 halt with an error message.
 
-Start:
-End:
+Start: December 6 3:00pm
+End: December 6 8:00pm
 BranchName: UserStory3
 Description:
 The program will prompt the user for the name of the output file. If that file
@@ -47,7 +47,7 @@ Description:
 The program will copy selected lines from “measles.csv” into a file selected by
 the user.
 
-Start: December 6 3:00pm
+Start: December 5 3:00pm
 End: December 6 5:30pm
 BranchName: UserStory4
 Description:
@@ -57,8 +57,10 @@ set {1, 2, 3, 4}, where 1 corresponds to “low income”, 2 corresponds to “l
 middle income”, 3 corresponds to “upper middle income” and 4 corresponds to
 “high income”.
 
+Start: December 6 12:30pm
+End: December 6 1:20am
 BranchName: UserStory5
-Description: December 7 1:20am
+Description:
 The program will copy all data of “measles.csv” selected by the user’s response.
 A column is selected if the user’s response matches the Year field. A row
 (country) is selected if the income level matches. All data (in either/both rows
@@ -68,6 +70,22 @@ the following user responses: “1987”, “all”, “”ALL”.
 The output file created by the program will have the same format as the input
 file. Note that when the user selects all lines, the output file will be
 identical to the input file.
+
+Start: December 6 1:40am
+End: December 7 3:42pm
+BranchName: UserStory6-2
+Description:
+Fix problems with UserStory6.
+- First loop for calculating average does not advance.
+- Implement country with highest rate.
+- Implement country with lowest rage.
+
+Start: December 7 5:14pm
+End:
+BranchName: UserStory8
+Description:
+Use a toolkit to graph the data. Save and include a good quality view of the image; include
+it in the essay in part 3.
 
 
 
