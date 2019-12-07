@@ -37,6 +37,7 @@ citations should be used (e.g. in-text citations using APA format; a final
 References list should be provided).
 
 
+
 User: Ryan (Put user stories you are working on below.)
 
 Start: December 5 2:42pm
@@ -47,7 +48,7 @@ The program will copy selected lines from “measles.csv” into a file selected
 the user.
 
 Start: December 6 3:00pm
-End:
+End: December 6 5:30pm
 BranchName: UserStory4
 Description:
 The program will prompt the user to enter a year, and will then prompt the user
@@ -56,9 +57,23 @@ set {1, 2, 3, 4}, where 1 corresponds to “low income”, 2 corresponds to “l
 middle income”, 3 corresponds to “upper middle income” and 4 corresponds to
 “high income”.
 
+BranchName: UserStory5
+Description: December 7 1:20am
+The program will copy all data of “measles.csv” selected by the user’s response.
+A column is selected if the user’s response matches the Year field. A row
+(country) is selected if the income level matches. All data (in either/both rows
+and columns) are selected if the user’s response is “all” or “ALL”.
+For example, a line whose Year field contains “1987” would be selected by any of
+the following user responses: “1987”, “all”, “”ALL”.
+The output file created by the program will have the same format as the input
+file. Note that when the user selects all lines, the output file will be
+identical to the input file.
+
+
+
 User: Sam  (Put user stories you are working on below.)
 
-Start:
+Start: December 6 5:00pm
 End:
 BranchName: UserStory6
 Description:
