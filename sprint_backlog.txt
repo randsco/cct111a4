@@ -92,7 +92,7 @@ it in the essay in part 3.
 User: Sam  (Put user stories you are working on below.)
 
 Start: December 6 5:00pm
-End:
+End: December 7 3:42pm
 BranchName: UserStory6
 Description:
 The program will identify all records in the input file which match the user’s
@@ -104,3 +104,4 @@ the following information to the console:
 - The country with the highest percentage for those records.
 - The name of the country and the percent of children vaccinated will be
   displayed for the last two items (lowest percentage and highest percentage).
+
